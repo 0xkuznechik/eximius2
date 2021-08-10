@@ -1,5 +1,5 @@
-#ifndef CHUNKBLOB_SSTABLE_SSTABLE_H_
-#define CHUNKBLOB_SSTABLE_SSTABLE_H_
+#ifndef STORAGE_SSTABLE_SSTABLE_H_
+#define STORAGE_SSTABLE_SSTABLE_H_
 
 #include <map>
 #include <string>

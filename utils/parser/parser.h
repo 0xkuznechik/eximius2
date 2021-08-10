@@ -1,12 +1,11 @@
-#ifndef CHUNKBLOB_SSTABLE_UTILS_PARSER_H_
-#define CHUNKBLOB_SSTABLE_UTILS_PARSER_H_
+#ifndef UTILS_PARSER_PARSER_H_
+#define UTILS_PARSER_PARSER_H_
 
 #include <string>
 #include <vector>
 
-namespace chunkblob {
-namespace sstable {
 namespace utils {
+namespace parser {
 
 class Parser {
  public:
@@ -20,7 +19,6 @@ class Parser {
 };
 
 }  // namespace utils
-}  // namespace sstable
-}  // namespace chunkblob
+}  // namespace parser
 
 #endif

@@ -1,9 +1,8 @@
-#ifndef CHUNKBLOB_SSTABLE_UTILS_STATUS_H_
-#define CHUNKBLOB_SSTABLE_UTILS_STATUS_H_
+#ifndef UTILS_ERROR_HANDLING_STATUS_H_
+#define UTILS_ERROR_HANDLING_STATUS_H_
 
-namespace chunkblob {
-namespace sstable {
 namespace utils {
+namespace error_handling {
 
 enum class Status {
 	kOk,
@@ -11,7 +10,6 @@ enum class Status {
 };
 
 }  // namespace utils
-}  // namespace sstable
-}  // namespace chunkblob
+}  // namespace error_handling
 
 #endif

@@ -1,8 +1,7 @@
 #include "parser.h"
 
-namespace chunkblob {
-namespace sstable {
 namespace utils {
+namespace parser {
 
 Parser::Parser(const char* ifstream, const char delimiter)
     : ifstream_(ifstream), delimiter_(delimiter){};
@@ -23,5 +22,5 @@ std::vector<std::string> Parser::Process() {
 }
 
 }  // namespace utils
-}  // namespace sstable
-}  // namespace chunkblob
+}  // namespace parser
+
