@@ -1,4 +1,4 @@
-#include "parser.h"
+#include "utils/parser/parser.h"
 
 namespace utils {
 namespace parser {
@@ -16,11 +16,11 @@ std::vector<std::string> Parser::Process() {
     }
     elements.push_back(tmp);
     tmp = "";
-    *ifstream_++;
+    ifstream_++;
   }
   return elements;
 }
 
-}  // namespace utils
 }  // namespace parser
+}  // namespace utils
 

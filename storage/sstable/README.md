@@ -1,4 +1,4 @@
-# Overview
+#Overview
 *"An SSTable is a simple abstraction to efficiently store large numbers of
 key-value pairs while optimizing for high throughput, sequential read/write
 workloads."*
@@ -14,7 +14,7 @@ immutable blob.
 Keys are sorted when they are processed via i/o. This makes algorithms on sorted
 arrays available to the user.
 
-# Design Doc
+#Design Doc
 ## Overview
 I aim to implement an intentionally reductive and overly simplified version of
 the SSTable data model.
@@ -64,6 +64,13 @@ default to ",".
 ### Alternatives Considered
 
 ## Implementation
+### Memory
+
+#HERE
+- Data blocks are entries in sorted virtual page table.
+- A regular background process goes through and organizes the data into truly
+	contiugous physical memory entries (?)
+
 ### Timeline
 
 **Basic User Interface**

@@ -1,0 +1,38 @@
+Following advice from https://matklad.github.io/2021/02/06/ARCHITECTURE.md.html
+
+Base directories are intended to be as (hopefully) self-explanatory as possible.
+
+`tree`:
+.
+├── compute
+│   └── mapreduce
+├── storage
+│   ├── bigtable
+│   ├── chubby
+│   ├── gfs
+│   └── sstable
+├── utils
+│   ├── error_handling
+│   ├── gcl
+│   └── parser
+
+
+`compute`
+	Process data and perform actions with the computer.
+
+	- mapreduce: Parallel processing of key-value data.
+
+`storage`
+	Representations of data. Various use cases and API interfaces.
+
+	- bigtable: Distributed data table system.
+	- chubby: Lock and key system.
+	- gfs: Abstraction of a distributed file system.
+	- sstable: Basic atomic file format, as efficient sorted string key-value chunks.
+
+`utils`
+	Miscellaneously useful tools.
+
+	- error_handling: Interface of errors and statuses of operations.
+	- gcl: Generic config language for binaries.
+	- parser: Parse streams of data (usually text) into client-defined chunks.

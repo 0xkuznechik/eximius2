@@ -3,6 +3,7 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 package(
     default_visibility = [
 				"//compute:__subpackages__",
+				"//utils:__subpackages__",
 				"//storage:__subpackages__",
     ],
 )
